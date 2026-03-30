@@ -45,7 +45,7 @@ Our core logic is built with Rust on the Soroban smart contract platform:
 
 ### 3. Premium User Experience (UX)
 
-![StarChain Browse Page](./public/assets/screenshots/browse_page.png)
+![Browse Businesses](./public/assets/screenshots/browse_page.png)
 
 *   **Browse Reviews Page**: Seamlessly view all submitted reviews with ratings and wallet verification.
 *   **Submit Review Form**: User-friendly interface to write and publish reviews directly on-chain.
@@ -55,20 +55,28 @@ Our core logic is built with Rust on the Soroban smart contract platform:
 *   **Live Rating Display**: Instant feedback showing your review has been recorded.
 
 ### 4. Trust & Verification System
-
-![My Dashboard](./public/assets/screenshots/dashboard.png)
-
 *   **Wallet Address Verification**: Every reviewer's Stellar wallet is publicly visible and verifiable.
 *   **Blockchain Explorer Links**: Direct links to verify transactions on Stellar Expert.
 *   **Immutable Record**: Reviews cannot be edited or deleted once published on-chain.
 *   **Community Trust Score**: Aggregate ratings visible for transparent reputation.
 
-### 5. On-Chain Proof — Stellar Expert Contract View
+---
+
+## 📸 App Screenshots
+
+### 📊 My Dashboard — Personal Reputation Hub
+
+![My Dashboard](./public/assets/screenshots/dashboard.png)
+
+> Dashboard showing registered businesses, **3 verified reviews signed**, and **150 SRT** unclaimed rewards. Recent feedback signed by wallet is displayed with business name and star rating.
+
+---
+
+### 🔗 Smart Contract — Stellar Expert On-Chain Proof
 
 ![Stellar Expert Contract](./public/assets/screenshots/contract_view.png)
 
-*   **Live Smart Contract**: View deployed Soroban contract at [Stellar Expert](https://stellar.expert/explorer/testnet/contract/CABXIUP6FTYYHZKD7ZCASSMFKKUSXYNCPVKRBNCIXPUEPQ5C3ZWGZYTV)
-*   **Full Transaction History**: Every wallet-signed review vote is permanently recorded on-chain.
+> Live Soroban smart contract on [Stellar Expert Testnet](https://stellar.expert/explorer/testnet/contract/CABXIUP6FTYYHZKD7ZCASSMFKKUSXYNCPVKRBNCIXPUEPQ5C3ZWGZYTV). Every `vote()` transaction is a cryptographic, wallet-signed review — fully immutable and publicly verifiable on-chain.
 
 ---
 
@@ -78,12 +86,12 @@ Our core logic is built with Rust on the Soroban smart contract platform:
 starchain-fixed/
 ├── public/                 # Static assets (images, logos)
 │   └── assets/
-│       ├── businesses/     # Verified business images
-│       └── screenshots/    # App screenshots
-│           ├── home_banner.png
-│           ├── browse_page.png
-│           ├── dashboard.png
-│           └── contract_view.png
+│       ├── businesses/         # Verified business images
+│       └── screenshots/        # App screenshots
+│           ├── home_banner.png     # StarChain home page
+│           ├── browse_page.png     # Browse businesses
+│           ├── dashboard.png       # My Dashboard
+│           └── contract_view.png   # Stellar Expert contract
 ├── src/
 │   ├── components/         # Reusable UI components
 │   ├── hooks/              # Custom React hooks (Store, Wallet)
