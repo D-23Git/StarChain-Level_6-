@@ -1,6 +1,6 @@
 # 🌟 StarChain Reviews - Level 5
 
-![StarChain Home Dashboard](./assets/businesses/sharma.png)
+![StarChain Home Dashboard](./public/assets/screenshots/home_banner.png)
 
 Welcome to **StarChain Reviews**, a fully decentralized digital trust and reputation platform built on the **Stellar Soroban** blockchain. This project eliminates the fake review industry by cryptographically verifying all commercial feedback on-chain.
 
@@ -44,7 +44,8 @@ Our core logic is built with Rust on the Soroban smart contract platform:
 *   **Metadata Compression**: Efficient data encoding for storing rich review information.
 
 ### 3. Premium User Experience (UX)
-![StarChain Review Interface](./assets/businesses/medicare.png)
+
+![StarChain Browse Page](./public/assets/screenshots/browse_page.png)
 
 *   **Browse Reviews Page**: Seamlessly view all submitted reviews with ratings and wallet verification.
 *   **Submit Review Form**: User-friendly interface to write and publish reviews directly on-chain.
@@ -54,10 +55,20 @@ Our core logic is built with Rust on the Soroban smart contract platform:
 *   **Live Rating Display**: Instant feedback showing your review has been recorded.
 
 ### 4. Trust & Verification System
+
+![My Dashboard](./public/assets/screenshots/dashboard.png)
+
 *   **Wallet Address Verification**: Every reviewer's Stellar wallet is publicly visible and verifiable.
 *   **Blockchain Explorer Links**: Direct links to verify transactions on Stellar Expert.
 *   **Immutable Record**: Reviews cannot be edited or deleted once published on-chain.
 *   **Community Trust Score**: Aggregate ratings visible for transparent reputation.
+
+### 5. On-Chain Proof — Stellar Expert Contract View
+
+![Stellar Expert Contract](./public/assets/screenshots/contract_view.png)
+
+*   **Live Smart Contract**: View deployed Soroban contract at [Stellar Expert](https://stellar.expert/explorer/testnet/contract/CABXIUP6FTYYHZKD7ZCASSMFKKUSXYNCPVKRBNCIXPUEPQ5C3ZWGZYTV)
+*   **Full Transaction History**: Every wallet-signed review vote is permanently recorded on-chain.
 
 ---
 
@@ -67,7 +78,12 @@ Our core logic is built with Rust on the Soroban smart contract platform:
 starchain-fixed/
 ├── public/                 # Static assets (images, logos)
 │   └── assets/
-│       └── businesses/     # Verified business images
+│       ├── businesses/     # Verified business images
+│       └── screenshots/    # App screenshots
+│           ├── home_banner.png
+│           ├── browse_page.png
+│           ├── dashboard.png
+│           └── contract_view.png
 ├── src/
 │   ├── components/         # Reusable UI components
 │   ├── hooks/              # Custom React hooks (Store, Wallet)
@@ -198,7 +214,7 @@ This project is licensed under the MIT License.
 
 ---
 
-## 👨💻 Author
+## 👨‍💻 Author
 
 **Dnyaneshwari Badhe** 
 - GitHub: [https://github.com/D-23Git](https://github.com/D-23Git)
