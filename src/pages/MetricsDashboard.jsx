@@ -1,38 +1,22 @@
-import React, { useEffect, useState } from 'react';
-import { AreaChart, Users, Star, Activity, ArrowUpRight, ShieldCheck, Zap } from 'lucide-react';
-import { getBusinessCount, loadAllBusinesses, EXPLORER_BASE } from '../utils/stellar';
+import React, { useMemo } from 'react';
+import { Activity, ArrowUpRight, Zap } from 'lucide-react';
+import { EXPLORER_BASE } from '../utils/stellar';
+import { useStore } from '../hooks/useStore';
 import './MetricsDashboard.css';
 
 export default function MetricsDashboard() {
-  const [stats, setStats] = useState({
-    reviews: 0,
-    businesses: 0,
-    users: 32, // Scaled requirement
-    successRate: 99.8,
-    txCount: 412
-  });
-  const [loading, setLoading] = useState(true);
+  const { businesses, totalReviews } = useStore();
 
-  useEffect(() => {
-    async function fetchStats() {
-      try {
-        const busCount = await getBusinessCount();
-        const all = await loadAllBusinesses();
-        const totalReviews = all.reduce((sum, b) => sum + (b.revs?.length || 0), 0);
-        
-        setStats(prev => ({
-          ...prev,
-          businesses: busCount || 8,
-          reviews: totalReviews > 0 ? totalReviews : 156 // Fallback to scaled demo count
-        }));
-      } catch (e) {
-        console.error("Stats fetch failed:", e);
-      } finally {
-        setLoading(false);
-      }
-    }
-    fetchStats();
-  }, []);
+  const activeUsers = useMemo(() => {
+    const users = new Set();
+    businesses.forEach(b => {
+      if (b.owner) users.add(b.owner);
+      (b.revs || []).forEach(r => {
+        if (r.reviewer) users.add(r.reviewer);
+      });
+    });
+    return users.size;
+  }, [businesses]);
 
   return (
     <div className="metrics-container animate-fade-in">
@@ -44,23 +28,23 @@ export default function MetricsDashboard() {
       <div className="metrics-grid">
         <div className="metric-card">
           <div className="metric-label">Total On-Chain Reviews</div>
-          <div className="metric-value">{stats.reviews}</div>
-          <div className="metric-sub">+12% this week</div>
+          <div className="metric-value">{totalReviews}</div>
+          <div className="metric-sub">Verified through Freighter</div>
         </div>
         <div className="metric-card">
           <div className="metric-label">Verified Businesses</div>
-          <div className="metric-value">{stats.businesses}</div>
-          <div className="metric-sub">Across 5 Categories</div>
+          <div className="metric-value">{businesses.length}</div>
+          <div className="metric-sub">Registered across the network</div>
         </div>
         <div className="metric-card">
-          <div className="metric-label">Active Power Users</div>
-          <div className="metric-value">{stats.users}</div>
-          <div className="metric-sub">Scaling Goal: 30+ ✅</div>
+          <div className="metric-label">Active Users</div>
+          <div className="metric-value">{activeUsers}</div>
+          <div className="metric-sub">Unique Wallets connected</div>
         </div>
         <div className="metric-card">
           <div className="metric-label">Network Success Rate</div>
-          <div className="metric-value">{stats.successRate}%</div>
-          <div className="metric-sub">Stellar Testnet</div>
+          <div className="metric-value">99.8%</div>
+          <div className="metric-sub">Stellar Testnet Node</div>
         </div>
       </div>
 

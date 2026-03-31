@@ -12,7 +12,6 @@ import ProfilePage from './pages/ProfilePage'
 import LeaderboardPage from './pages/LeaderboardPage'
 import MetricsDashboard from './pages/MetricsDashboard'
 import MonitoringPage from './pages/MonitoringPage'
-import LiveBuzzFeeder from './components/LiveBuzzFeeder'
 
 export default function App() {
   return (
@@ -47,7 +46,6 @@ export default function App() {
                 error:   { iconTheme: { primary: '#ef4444', secondary: '#fff' } },
               }}
             />
-            <LiveBuzzFeeder />
           </HashRouter>
         </WalletProvider>
     </StoreProvider>
