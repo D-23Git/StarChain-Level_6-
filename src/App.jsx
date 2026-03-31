@@ -12,6 +12,7 @@ import ProfilePage from './pages/ProfilePage'
 import LeaderboardPage from './pages/LeaderboardPage'
 import MetricsDashboard from './pages/MetricsDashboard'
 import MonitoringPage from './pages/MonitoringPage'
+import LiveBuzzFeeder from './components/LiveBuzzFeeder'
 
 export default function App() {
   return (
@@ -32,22 +33,23 @@ export default function App() {
             <Route path="*"           element={<Navigate to="/" replace />} />
           </Routes>
 
-          <Toaster
-            position="bottom-right"
-            toastOptions={{
-              style: {
-                background: '#13132a',
-                color: '#f1f0ff',
-                border: '1px solid rgba(120,80,255,0.28)',
-                fontFamily: "'Outfit', sans-serif",
-                fontSize: '14px',
-              },
-              success: { iconTheme: { primary: '#10b981', secondary: '#fff' } },
-              error:   { iconTheme: { primary: '#ef4444', secondary: '#fff' } },
-            }}
-          />
-        </HashRouter>
-      </WalletProvider>
+            <Toaster
+              position="bottom-right"
+              toastOptions={{
+                style: {
+                  background: '#13132a',
+                  color: '#f1f0ff',
+                  border: '1px solid rgba(120,80,255,0.28)',
+                  fontFamily: "'Outfit', sans-serif",
+                  fontSize: '14px',
+                },
+                success: { iconTheme: { primary: '#10b981', secondary: '#fff' } },
+                error:   { iconTheme: { primary: '#ef4444', secondary: '#fff' } },
+              }}
+            />
+            <LiveBuzzFeeder />
+          </HashRouter>
+        </WalletProvider>
     </StoreProvider>
   )
 }

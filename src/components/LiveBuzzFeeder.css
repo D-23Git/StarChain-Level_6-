@@ -1,0 +1,48 @@
+.live-buzz-popup {
+  position: fixed;
+  bottom: 24px;
+  left: 24px;
+  background: rgba(10, 10, 15, 0.95);
+  border: 1px solid rgba(147, 51, 234, 0.3);
+  backdrop-filter: blur(12px);
+  padding: 12px 18px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  z-index: 9999;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.5), inset 0 0 0 1px rgba(255,255,255,0.05);
+  max-width: 320px;
+}
+
+.lbp-icon {
+  font-size: 18px;
+}
+
+.lbp-context {
+  font-size: 12px;
+  color: #a1a1aa;
+  line-height: 1.4;
+}
+
+.lbp-user {
+  font-weight: 800;
+  color: #d8b4fe;
+  font-family: monospace;
+}
+
+.lbp-target {
+  font-weight: 700;
+  color: #fff;
+}
+
+@keyframes slide-up-fade {
+  0% { transform: translateY(20px); opacity: 0; }
+  10% { transform: translateY(0); opacity: 1; }
+  90% { transform: translateY(0); opacity: 1; }
+  100% { transform: translateY(10px); opacity: 0; }
+}
+
+.ani-slide-up {
+  animation: slide-up-fade 4s ease-in-out forwards;
+}
