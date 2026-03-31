@@ -1,7 +1,7 @@
 {
   "name": "starchain-reviews",
   "private": true,
-  "version": "1.0.0",
+  "version": "1.0.0-blackbelt",
   "type": "module",
   "scripts": {
     "dev": "vite",
