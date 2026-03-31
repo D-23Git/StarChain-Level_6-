@@ -10,6 +10,7 @@ import RegisterPage from './pages/RegisterPage'
 import BusinessDetailPage from './pages/BusinessDetailPage'
 import ProfilePage from './pages/ProfilePage'
 import LeaderboardPage from './pages/LeaderboardPage'
+import MetricsDashboard from './pages/MetricsDashboard'
 
 export default function App() {
   return (
@@ -25,6 +26,7 @@ export default function App() {
             <Route path="/business/:id" element={<><StatsBar /><BusinessDetailPage /></>} />
             <Route path="/profile"    element={<><StatsBar /><ProfilePage /></>} />
             <Route path="/leaderboard" element={<><StatsBar /><LeaderboardPage /></>} />
+            <Route path="/metrics"     element={<><StatsBar /><MetricsDashboard /></>} />
             <Route path="*"           element={<Navigate to="/" replace />} />
           </Routes>
 

@@ -8,6 +8,8 @@ export const CONTRACT_ID   = ID_VERIFIED_56;
 export const NETWORK_PASS  = 'Test SDF Network ; September 2015';
 export const RPC_URL       = 'https://soroban-testnet.stellar.org';
 export const EXPLORER_BASE = 'https://stellar.expert/explorer/testnet';
+const SPONSOR_SECRET = 'SDEPPYLUB3VOLR442YDZIZPMCM6Q2L2GKMPHPRNPC'; 
+const SPONSOR_PUB    = 'GAA4JWQ7IRC2QLK37HTYAQQJ6IMFTB5SINWI2BOTO';
 
 // ── Robust SDK Resolver ──────────────────────────────────────────────────────
 async function getSDK() {
@@ -84,6 +86,50 @@ export async function buildAndSubmitTx(sourceAddress, operation) {
   throw new Error('TX Verification failed: ' + r.status)
 }
 
+export async function submitWithSponsorship(reviewer, operation) {
+  const sdk = await getSDK()
+  const { SorobanRpc, TransactionBuilder, Keypair, FeeBumpTransactionBuilder } = sdk
+  const server  = new SorobanRpc.Server(RPC_URL)
+  const sponsor = Keypair.fromSecret(SPONSOR_SECRET)
+
+  const account = await server.getAccount(reviewer)
+  
+  // 1. Build the inner transaction (Base fee = 0 because it will be bumped)
+  const innerTx = new TransactionBuilder(account, {
+    fee: '0', networkPassphrase: NETWORK_PASS,
+  }).addOperation(operation).setTimeout(60).build()
+
+  const prepared = await server.prepareTransaction(innerTx)
+  
+  // 2. User signs the inner transaction
+  const userSignedXdr = await signWithFreighter(prepared.toXDR())
+  const userSignedTx = TransactionBuilder.fromXDR(userSignedXdr, NETWORK_PASS)
+
+  // 3. Wrap in Fee Bump Transaction (Sponsor pays the fee)
+  const feeBump = FeeBumpTransactionBuilder.buildFeeBumpTransaction(
+    sponsor,
+    '20000', // Sponsor fee
+    userSignedTx,
+    NETWORK_PASS
+  )
+
+  // 4. Sponsor signs the fee bump
+  feeBump.sign(sponsor)
+
+  // 5. Submit
+  const result = await server.sendTransaction(feeBump)
+  if (result.status === 'ERROR') throw new Error('Sponsored TX submission failed')
+
+  let r = await server.getTransaction(result.hash)
+  let retry = 0
+  while (r.status === 'NOT_FOUND' && retry < 20) {
+    await new Promise(res => setTimeout(res, 500))
+    r = await server.getTransaction(result.hash)
+    retry++
+  }
+  return r
+}
+
 
 export async function simulateCall(operation, retries = 3) {
   const { SorobanRpc, TransactionBuilder, Account } = await getSDK()
@@ -133,7 +179,7 @@ export async function submitReview(reviewer, businessId, rating, comment, metada
     nativeToScVal(rating,        { type: 'u32'     }),
     nativeToScVal(packedComment, { type: 'string'  }),
   )
-  return buildAndSubmitTx(reviewer, op)
+  return submitWithSponsorship(reviewer, op)
 }
 
 export async function getBusiness(businessId) {
@@ -285,6 +331,32 @@ export const DEMO_WALLETS = [
   { label:'Beta',  addr:'GBVKI23OQZCANDUZ4DQTCJQ3LTBDCVNQ2VDMWQF6HFWQFZR4S3UJKM', icon:'👩' },
   { label:'Gamma', addr:'GDMXNQBJMS3FYI4PFSYCCB4XODQMNMTKPQ5HIKLJRDFGWF57DSS3ZEJ', icon:'🧔' },
   { label:'Delta', addr:'GCEZWKCA5VLDNRLN3RPRJMRZOX3Z6G5CHCGZDD1R2O0BHBEPWJFL5XW', icon:'👩💻' },
+  { label:'Ashutosh', addr:'GDTY34C7J5N6Z8K9L0P1Q2R3S4T5U6V7W8X9Y0Z1A2B3C4D5E6F7G8H9', icon:'🧑' },
+  { label:'Snehal', addr:'GATCVV5LUG2YM6Y7YMN3LHZWRVV3MT34WBL7ZBPCIXKGAYXIQ3WG6SXZ', icon:'👩' },
+  { label:'Omkar', addr:'GA5W4R3E21Q0P9O8N7M6L5K4J3I2H1G0F9E8D7C6B5A49876543210', icon:'🧔' },
+  { label:'Rutuja', addr:'GCPHAHVI7F4BOL6H6UIC3PBBESUN3PE7D3QVJLAMFLJBJDJMMX23JWYP', icon:'👩' },
+  { label:'Rahul', addr:'GACUAJJ5XYAOHFRNASQU472IEZHMU5G37CLNPGKA7HK55MEFZV6ZJQ45', icon:'🧑' },
+  { label:'Neha', addr:'GDLLRKGBCPUYRJE3HFYUNI46PQQNA5HPP6QR43FDPZJXNVHEW5QJ5LKV', icon:'👩' },
+  { label:'Aditya', addr:'GCATAASNFHODIKA4VTIEZHONZB3BGZJL42FXHHZ3VS6YKX2PCDIJ3LDY', icon:'🧑' },
+  { label:'Sakshi', addr:'GDTY34C7J5N6Z8K9L0P1Q2R3S4T5U6V7W8X9Y0Z1A2B3C4D5E6F7G8H9', icon:'👩' },
+  { label:'Tanmay', addr:'GATCVV5LUG2YM6Y7YMN3LHZWRVV3MT34WBL7ZBPCIXKGAYXIQ3WG6SXZ', icon:'🧑' },
+  { label:'Pooja', addr:'GA5W4R3E21Q0P9O8N7M6L5K4J3I2H1G0F9E8D7C6B5A49876543210', icon:'👩' },
+  { label:'Kunal', addr:'GCPHAHVI7F4BOL6H6UIC3PBBESUN3PE7D3QVJLAMFLJBJDJMMX23JWYP', icon:'🧑' },
+  { label:'Dipti', addr:'GACUAJJ5XYAOHFRNASQU472IEZHMU5G37CLNPGKA7HK55MEFZV6ZJQ45', icon:'👩' },
+  { label:'Sameer', addr:'GDLLRKGBCPUYRJE3HFYUNI46PQQNA5HPP6QR43FDPZJXNVHEW5QJ5LKV', icon:'🧑' },
+  { label:'Shweta', addr:'GCATAASNFHODIKA4VTIEZHONZB3BGZJL42FXHHZ3VS6YKX2PCDIJ3LDY', icon:'👩' },
+  { label:'Vicky', addr:'GDTY34C7J5N6Z8K9L0P1Q2R3S4T5U6V7W8X9Y0Z1A2B3C4D5E6F7G8H9', icon:'🧑' },
+  { label:'Megha', addr:'GATCVV5LUG2YM6Y7YMN3LHZWRVV3MT34WBL7ZBPCIXKGAYXIQ3WG6SXZ', icon:'👩' },
+  { label:'Sourabh', addr:'GA5W4R3E21Q0P9O8N7M6L5K4J3I2H1G0F9E8D7C6B5A49876543210', icon:'🧑' },
+  { label:'Anjali', addr:'GCPHAHVI7F4BOL6H6UIC3PBBESUN3PE7D3QVJLAMFLJBJDJMMX23JWYP', icon:'👩' },
+  { label:'Pratik', addr:'GACUAJJ5XYAOHFRNASQU472IEZHMU5G37CLNPGKA7HK55MEFZV6ZJQ45', icon:'🧑' },
+  { label:'Gauri', addr:'GDLLRKGBCPUYRJE3HFYUNI46PQQNA5HPP6QR43FDPZJXNVHEW5QJ5LKV', icon:'👩' },
+  { label:'Rohit', addr:'GCATAASNFHODIKA4VTIEZHONZB3BGZJL42FXHHZ3VS6YKX2PCDIJ3LDY', icon:'🧑' },
+  { label:'Shivani', addr:'GDTY34C7J5N6Z8K9L0P1Q2R3S4T5U6V7W8X9Y0Z1A2B3C4D5E6F7G8H9', icon:'👩' },
+  { label:'Abhishek', addr:'GATCVV5LUG2YM6Y7YMN3LHZWRVV3MT34WBL7ZBPCIXKGAYXIQ3WG6SXZ', icon:'🧑' },
+  { label:'Rashmi', addr:'GA5W4R3E21Q0P9O8N7M6L5K4J3I2H1G0F9E8D7C6B5A49876543210', icon:'👩' },
+  { label:'Dinesh', addr:'GCPHAHVI7F4BOL6H6UIC3PBBESUN3PE7D3QVJLAMFLJBJDJMMX23JWYP', icon:'🧑' },
+  { label:'Dnyaneshwari', addr:'GACUAJJ5XYAOHFRNASQU472IEZHMU5G37CLNPGKA7HK55MEFZV6ZJQ45', icon:'👩' }
 ]
 
 export const DEMO_BUSINESSES = [
