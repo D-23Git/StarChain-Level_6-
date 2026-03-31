@@ -89,6 +89,20 @@ export default function BrowsePage() {
               </button>
             ))}
           </div>
+
+          {/* RATING FILTERS */}
+          <div className="rating-filters">
+            <span className="rf-lbl">Min Rating:</span>
+            {[0, 3, 4, 5].map(r => (
+              <button 
+                key={r} 
+                className={`rf-pill ${minRating === r ? 'on' : ''}`} 
+                onClick={() => setMinRating(r)}
+              >
+                {r === 0 ? 'Any' : `${r}+ ⭐`}
+              </button>
+            ))}
+          </div>
         </div>
       </section>
 
