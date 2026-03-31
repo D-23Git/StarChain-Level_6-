@@ -56,10 +56,19 @@
   background: rgba(16,185,129,0.1); color: #10b981; border: 1px solid rgba(16,185,129,0.2);
   padding: 4px 8px; border-radius: 6px; font-size: 9px; font-weight: 900; letter-spacing: 0.1em; white-space: nowrap;
 }
+.bc-card-badges {
+  display: flex; align-items: center; gap: 8px;
+}
 .bc-rating-pill {
   display: inline-flex; align-items: center; gap: 6px;
   padding: 4px 10px; border-radius: 8px; background: rgba(245,158,11,0.05);
   border: 1px solid rgba(245,158,11,0.2); color: #f59e0b; font-size: 13px; font-weight: 600;
+  width: fit-content;
+}
+.bc-revs-badge {
+  display: inline-flex; align-items: center;
+  padding: 4px 10px; border-radius: 8px; background: rgba(139,92,246,0.05);
+  border: 1px solid rgba(139,92,246,0.2); color: #a78bfa; font-size: 13px; font-weight: 600;
   width: fit-content;
 }
 .bc-address {

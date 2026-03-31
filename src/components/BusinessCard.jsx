@@ -34,7 +34,10 @@ export default function BusinessCard({ biz }) {
            <h3 className="bc-title">{biz.name}</h3>
            <div className="bc-open-badge">OPEN</div>
          </div>
-         <div className="bc-rating-pill">⭐ {avg.toFixed(1)}</div>
+         <div className="bc-card-badges">
+           <div className="bc-rating-pill">⭐ {avg.toFixed(1)}</div>
+           <div className="bc-revs-badge">{count} Reviews</div>
+         </div>
          {(biz.address || biz.addr) && <div className="bc-address"><span>📍</span> {biz.address || biz.addr}</div>}
          
          {biz.menu && biz.menu.length > 0 && (
