@@ -94,8 +94,8 @@ export default function WalletModal({ open, onClose }) {
           </div>
 
           <div className="wm-demo-grid">
-            {DEMO_WALLETS.map(d => (
-              <button key={d.addr} className="wm-demo-btn" onClick={() => handleDemo(d)}>
+            {DEMO_WALLETS.map((d, i) => (
+              <button key={`${d.addr}-${i}`} className="wm-demo-btn" onClick={() => handleDemo(d)}>
                 <span className="wm-demo-icon">{d.icon}</span>
                 <span className="wm-demo-name">{d.label}</span>
                 <span className="wm-demo-addr">{d.addr.slice(0,6)}...{d.addr.slice(-4)}</span>
