@@ -8,8 +8,8 @@ export const CONTRACT_ID   = ID_VERIFIED_56;
 export const NETWORK_PASS  = 'Test SDF Network ; September 2015';
 export const RPC_URL       = 'https://soroban-testnet.stellar.org';
 export const EXPLORER_BASE = 'https://stellar.expert/explorer/testnet';
-const SPONSOR_SECRET = 'SDEPPYLUB3VOLR442YDZIZPMCM6Q2L2GKMPHPRNPC'; 
-const SPONSOR_PUB    = 'GAA4JWQ7IRC2QLK37HTYAQQJ6IMFTB5SINWI2BOTO';
+const SPONSOR_SECRET = 'SAUOQL2YKML566IISCXGMZV3RSL6EEA5MZZXQXDHVTOZPQPXQSWQUCNO'; 
+const SPONSOR_PUB    = 'GB4IBAXA6U5O7CGRF4K6XPXEPXB6YHVUDNEIKRUVWYJJJIRDG5AUPBZR';
 
 // ── Robust SDK Resolver ──────────────────────────────────────────────────────
 async function getSDK() {
