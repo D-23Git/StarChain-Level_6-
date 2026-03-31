@@ -90,6 +90,21 @@
 }
 .inp-select-dark:hover { border-color: #333; }
 
+/* Rating Filters */
+.rating-filters {
+  display: flex; align-items: center; gap: 12px; margin-bottom: 20px;
+}
+.rf-lbl { font-size: 11px; font-weight: 800; color: #555; text-transform: uppercase; letter-spacing: 0.1em; }
+.rf-pill {
+  padding: 8px 16px; border-radius: 12px; background: #0a0a0a; border: 1px solid #1a1a1a;
+  color: #888; font-size: 13px; font-weight: 700; cursor: pointer; transition: 0.2s;
+}
+.rf-pill:hover { background: #111; color: #aaa; }
+.rf-pill.on {
+  background: rgba(245,158,11,0.1); border-color: #f59e0b; color: #f59e0b;
+  box-shadow: 0 0 12px rgba(245,158,11,0.2);
+}
+
 .biz-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); gap: 24px; }
 
 /* Empty State */
