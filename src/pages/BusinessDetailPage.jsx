@@ -32,6 +32,16 @@ export default function BusinessDetailPage() {
   const [replyTo, setReplyTo] = useState(null) // ID of review being replied to
   const [replyText, setReplyText] = useState('')
 
+  const isOwner = wallet?.address === biz.owner
+
+  async function handleReplySubmit(revId) {
+    if (!replyText.trim()) return
+    addReply(biz.id, revId, replyText.trim())
+    setReplyTo(null)
+    setReplyText('')
+    toast.success('Reply signed and published! ✍️')
+  }
+
   if (!biz && storeLoading) return <div className="detail-loading">Synchronizing with Blockchain...</div>
   if (!biz && !storeLoading) return <div className="detail-loading">Store not found on the blockchain.</div>
 
@@ -244,8 +254,7 @@ export default function BusinessDetailPage() {
                         </div>
                      </div>
                   )}
-                  
-                  <div className="rev-list-modern">
+                                    <div className="rev-list-modern">
                     {biz.revs.length === 0 ? <p className="empty-txt-premium">No feedback yet. Be the first to sign!</p> : 
                      [...biz.revs].sort((a, b) => {
                         if (sortMode === 'newest') return (b.ts || 0) - (a.ts || 0);
@@ -270,15 +279,45 @@ export default function BusinessDetailPage() {
                             <img src={r.image || r.img} alt="Review" />
                           </div>
                         )}
+                        
+                        {r.reply && (
+                          <div className="owner-reply-box">
+                             <div className="orb-header">
+                               <span className="orb-tag">Merchant Response</span>
+                               <span className="orb-icon">🏪</span>
+                             </div>
+                             <p className="orb-text">{r.reply}</p>
+                          </div>
+                        )}
+
                         <div className="rc-meta-v10">
                            <div style={{ display: 'flex', gap: '10px', alignItems: 'center' }}>
                              <span className="rc-v-badge">VERIFIED BY SOROBAN</span>
                              <button className="btn-helpful" onClick={() => toast.success('Marked as helpful! 👍')}>
                                👍 Helpful
                              </button>
+                             {isOwner && !r.reply && (
+                               <button className="btn-reply-trigger" onClick={() => setReplyTo(r.id)}>
+                                 💬 Reply
+                               </button>
+                             )}
                            </div>
                            <a href={expLink('account', r.reviewer)} target="_blank" rel="noreferrer" className="rc-exp-v10">StellarExplorer ↗</a>
                         </div>
+
+                        {replyTo === r.id && (
+                          <div className="reply-editor ani-in">
+                             <textarea 
+                                placeholder="Type your response as merchant..." 
+                                value={replyText} 
+                                onChange={e => setReplyText(e.target.value)}
+                             />
+                             <div className="reply-edit-actions">
+                               <button className="btn-reply-cancel" onClick={() => setReplyTo(null)}>Cancel</button>
+                               <button className="btn-reply-publish" onClick={() => handleReplySubmit(r.id)}>Publish Reply</button>
+                             </div>
+                          </div>
+                        )}
                       </div>
                     ))}
                   </div>
