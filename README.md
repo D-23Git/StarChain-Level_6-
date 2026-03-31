@@ -18,9 +18,9 @@ Ensuring the protocol meets all graduation requirements for official review:
 ---
 
 ## 🔗 Important Links
-*   **Live Production Demo**: [starchain-fixed.vercel.app](https://starchain-fixed.vercel.app/)
+*   **Live Production Demo**: [star-chain-level-6.vercel.app](https://star-chain-level-6.vercel.app/)
 *   **GitHub Repository**: [https://github.com/D-23Git/StarChain-Level_6-](https://github.com/D-23Git/StarChain-Level_6-)
-*   **Analytics Dashboard**: [/metrics](https://starchain-fixed.vercel.app/#/metrics)
+*   **Analytics Dashboard**: [/metrics](https://star-chain-level-6.vercel.app/#/metrics)
 *   **User & Business Guide**: [USER_GUIDE.md](./USER_GUIDE.md)
 *   **Security & Audit**: [SECURITY_CHECKLIST.md](./SECURITY_CHECKLIST.md)
 *   **Stellar Contract ID**: `CA43LPCXAPJQZYGKAKYKMIBL7WBOXWFY22ZCVTGTDRULIUHGHWXBXU6N`
@@ -30,9 +30,9 @@ Ensuring the protocol meets all graduation requirements for official review:
 ## 🌟 Advanced Features (Black Belt)
 
 ### 🚀 Quick Links
-- [Live Demo](https://starchain-reviews.vercel.app/)
+- [Live Demo](https://star-chain-level-6.vercel.app/)
 - [Demo Day User Guide](./USER_GUIDE.md)
-- [System Status & Monitoring](https://starchain-reviews.vercel.app/#/monitoring)
+- [System Status & Monitoring](https://star-chain-level-6.vercel.app/#/monitoring)
 - [Stellar Smart Contract Explorer](https://stellar.expert/explorer/testnet/contract/CA43LPCXAPJQZYGKAKYKMIBL7WBOXWFY22ZCVTGTDRULIUHGHWXBXU6N)
 
 > **Level 6 Black Belt Status:** This repository has been scaled to handle 30+ concurrent users with real-time analytics, monitoring, and B2C merchant interaction loops fully implemented.
