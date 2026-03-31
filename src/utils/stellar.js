@@ -106,9 +106,9 @@ export async function submitWithSponsorship(reviewer, operation) {
   const userSignedTx = TransactionBuilder.fromXDR(userSignedXdr, NETWORK_PASS)
 
   // 3. Wrap in Fee Bump Transaction (Sponsor pays the fee)
-  const feeBump = FeeBumpTransactionBuilder.buildFeeBumpTransaction(
-    sponsor,
-    '20000', // Sponsor fee
+  const feeBump = TransactionBuilder.buildFeeBumpTransaction(
+    sponsor.publicKey(),
+    '20000', // Sponsor fee (max)
     userSignedTx,
     NETWORK_PASS
   )
