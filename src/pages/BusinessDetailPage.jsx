@@ -217,7 +217,18 @@ export default function BusinessDetailPage() {
                 <section className="detail-sec-card reviews-section">
                   <div className="rev-head-premium">
                     <h2 className="sec-title-premium">Community Reputation</h2>
-                    <span className="rev-count-badge">{reviewCount} Verified Signatures</span>
+                    <div className="rev-head-actions">
+                      <select 
+                        className="inp-select-premium" 
+                        value={sortMode} 
+                        onChange={e => setSortMode(e.target.value)}
+                      >
+                        <option value="newest">🕒 Newest First</option>
+                        <option value="highest">⭐ Highest Rating</option>
+                        <option value="lowest">📉 Lowest Rating</option>
+                      </select>
+                      <span className="rev-count-badge">{reviewCount} Verified Signatures</span>
+                    </div>
                   </div>
 
                   {biz.revs && biz.revs.length > 0 && (
@@ -234,7 +245,12 @@ export default function BusinessDetailPage() {
                   
                   <div className="rev-list-modern">
                     {biz.revs.length === 0 ? <p className="empty-txt-premium">No feedback yet. Be the first to sign!</p> : 
-                     [...biz.revs].reverse().map(r => (
+                     [...biz.revs].sort((a, b) => {
+                        if (sortMode === 'newest') return (b.ts || 0) - (a.ts || 0);
+                        if (sortMode === 'highest') return (b.rating || b.r || 0) - (a.rating || a.r || 0);
+                        if (sortMode === 'lowest') return (a.rating || a.r || 0) - (b.rating || b.r || 0);
+                        return 0;
+                     }).map(r => (
                       <div key={r.id} className="rev-card-v10">
                         <div className="rc-top-v10">
                           <div className="rc-user-v10">
@@ -253,7 +269,12 @@ export default function BusinessDetailPage() {
                           </div>
                         )}
                         <div className="rc-meta-v10">
-                           <span className="rc-v-badge">VERIFIED BY SOROBAN</span>
+                           <div style={{ display: 'flex', gap: '10px', alignItems: 'center' }}>
+                             <span className="rc-v-badge">VERIFIED BY SOROBAN</span>
+                             <button className="btn-helpful" onClick={() => toast.success('Marked as helpful! 👍')}>
+                               👍 Helpful
+                             </button>
+                           </div>
                            <a href={expLink('account', r.reviewer)} target="_blank" rel="noreferrer" className="rc-exp-v10">StellarExplorer ↗</a>
                         </div>
                       </div>
