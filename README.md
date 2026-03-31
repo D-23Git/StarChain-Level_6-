@@ -1,6 +1,6 @@
 # 🌟 StarChain Reviews - Level 5
 
-![StarChain Home Dashboard](./public/assets/screenshots/home_banner.png)
+![StarChain Home Dashboard](https://raw.githubusercontent.com/D-23Git/StarChain/main/public/assets/screenshots/home_banner.png)
 
 Welcome to **StarChain Reviews**, a fully decentralized digital trust and reputation platform built on the **Stellar Soroban** blockchain. This project eliminates the fake review industry by cryptographically verifying all commercial feedback on-chain.
 
@@ -45,7 +45,7 @@ Our core logic is built with Rust on the Soroban smart contract platform:
 
 ### 3. Premium User Experience (UX)
 
-![Browse Businesses](./public/assets/screenshots/browse_page.png)
+![Browse Businesses](https://raw.githubusercontent.com/D-23Git/StarChain/main/public/assets/screenshots/browse_page.png)
 
 *   **Browse Reviews Page**: Seamlessly view all submitted reviews with ratings and wallet verification.
 *   **Submit Review Form**: User-friendly interface to write and publish reviews directly on-chain.
@@ -66,7 +66,7 @@ Our core logic is built with Rust on the Soroban smart contract platform:
 
 ### 📊 My Dashboard — Personal Reputation Hub
 
-![My Dashboard](./public/assets/screenshots/dashboard.png)
+![My Dashboard](https://raw.githubusercontent.com/D-23Git/StarChain/main/public/assets/screenshots/dashboard.png)
 
 > Dashboard showing registered businesses, **3 verified reviews signed**, and **150 SRT** unclaimed rewards. Recent feedback signed by wallet is displayed with business name and star rating.
 
@@ -74,7 +74,7 @@ Our core logic is built with Rust on the Soroban smart contract platform:
 
 ### 🔗 Smart Contract — Stellar Expert On-Chain Proof
 
-![Stellar Expert Contract](./public/assets/screenshots/contract_view.png)
+![Stellar Expert Contract](https://raw.githubusercontent.com/D-23Git/StarChain/main/public/assets/screenshots/contract_view.png)
 
 > Live Soroban smart contract on [Stellar Expert Testnet](https://stellar.expert/explorer/testnet/contract/CABXIUP6FTYYHZKD7ZCASSMFKKUSXYNCPVKRBNCIXPUEPQ5C3ZWGZYTV). Every `vote()` transaction is a cryptographic, wallet-signed review — fully immutable and publicly verifiable on-chain.
 
