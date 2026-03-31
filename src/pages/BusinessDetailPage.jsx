@@ -394,10 +394,13 @@ export default function BusinessDetailPage() {
                />
                
                <button className="btn-primary-full-v10" onClick={handleSubmitReview} disabled={loading}>
-                 {loading ? <span className="loader-v10" /> : 'Sign & Submit To Blockchain'}
+                 {loading ? <div style={{display:'flex', alignItems:'center', justifyContent:'center', gap:'8px'}}><span className="loader-v10" /> Confirming...</div> : 'Sign & Submit To Blockchain'}
                </button>
                <p style={{marginTop:'12px', fontSize:'13px', color:'#a78bfa', textAlign:'center', fontWeight:'600'}}>
-                 ✦ Earn <strong>+50 SRT Tokens</strong> automatically when validated on-chain.
+                 {loading 
+                   ? <span style={{color: '#f59e0b', display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '6px'}} className="ani-pulse">⏳ Waiting for Blockchain Confirmation...</span> 
+                   : <>✦ Earn <strong>+50 SRT Tokens</strong> automatically when validated on-chain.</>
+                 }
                </p>
             </div>
           </div>
