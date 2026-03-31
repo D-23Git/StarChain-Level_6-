@@ -32,6 +32,7 @@ export default function Navbar() {
             <Link to="/register" className={`nb-link ${active('/register')}`}>+ Register Business</Link>
             <Link to="/leaderboard" className={`nb-link ${active('/leaderboard')}`}>Leaderboard 🏆</Link>
             <Link to="/metrics" className={`nb-link ${active('/metrics')}`}>Analytics 📊</Link>
+            <Link to="/monitoring" className={`nb-link ${active('/monitoring')}`}>System Status 🟢</Link>
             <a 
               className="nb-link nb-explorer-btn" 
               href="https://stellar.expert/explorer/testnet/contract/CA43LPCXAPJQZYGKAKYKMIBL7WBOXWFY22ZCVTGTDRULIUHGHWXBXU6N" 
@@ -86,6 +87,7 @@ export default function Navbar() {
             <Link to="/register" className={`nb-link ${active('/register')}`} onClick={() => setMenuOpen(false)}>+ Register Business</Link>
             <Link to="/leaderboard" className={`nb-link ${active('/leaderboard')}`} onClick={() => setMenuOpen(false)}>Leaderboard 🏆</Link>
             <Link to="/metrics" className={`nb-link ${active('/metrics')}`} onClick={() => setMenuOpen(false)}>Analytics 📊</Link>
+            <Link to="/monitoring" className={`nb-link ${active('/monitoring')}`} onClick={() => setMenuOpen(false)}>Status 🟢</Link>
             <a 
               className="nb-link" 
               href="https://stellar.expert/explorer/testnet/contract/CA43LPCXAPJQZYGKAKYKMIBL7WBOXWFY22ZCVTGTDRULIUHGHWXBXU6N" 
