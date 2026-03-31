@@ -28,6 +28,7 @@ export default function BusinessDetailPage() {
   const [modalOpen, setModalOpen] = useState(false)
   const [activeTab, setActiveTab] = useState('overview') // overview | menu | feedback
   const [showCelebration, setShowCelebration] = useState(false)
+  const [sortMode, setSortMode] = useState('newest') // newest | highest | lowest
 
   if (!biz && storeLoading) return <div className="detail-loading">Synchronizing with Blockchain...</div>
   if (!biz && !storeLoading) return <div className="detail-loading">Store not found on the blockchain.</div>
