@@ -17,7 +17,7 @@ import './BusinessDetailPage.css'
 export default function BusinessDetailPage() {
   const { id } = useParams()
   const navigate = useNavigate()
-  const { businesses, addReview, loading: storeLoading } = useStore()
+  const { businesses, addReview, addReply, loading: storeLoading } = useStore()
   const { wallet } = useWallet()
   const biz = businesses.find(b => b.id === Number(id))
 
@@ -29,6 +29,8 @@ export default function BusinessDetailPage() {
   const [activeTab, setActiveTab] = useState('overview') // overview | menu | feedback
   const [showCelebration, setShowCelebration] = useState(false)
   const [sortMode, setSortMode] = useState('newest') // newest | highest | lowest
+  const [replyTo, setReplyTo] = useState(null) // ID of review being replied to
+  const [replyText, setReplyText] = useState('')
 
   if (!biz && storeLoading) return <div className="detail-loading">Synchronizing with Blockchain...</div>
   if (!biz && !storeLoading) return <div className="detail-loading">Store not found on the blockchain.</div>

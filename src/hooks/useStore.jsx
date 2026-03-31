@@ -139,11 +139,31 @@ export function StoreProvider({ children }) {
     })
   }, [])
 
+  const addReply = useCallback((bizId, reviewId, reply) => {
+    // Save to LocalStorage for Persistence
+    const saved = JSON.parse(localStorage.getItem('sc_local_replies') || '{}')
+    saved[reviewId] = reply
+    localStorage.setItem('sc_local_replies', JSON.stringify(saved))
+
+    // Update State
+    setBusinesses(prev => {
+      const next = prev.map(b => {
+        if (b.id !== bizId) return b
+        return {
+          ...b,
+          revs: (b.revs || []).map(r => r.id === reviewId ? { ...r, reply } : r)
+        }
+      });
+      localStorage.setItem('sc_cache_businesses', JSON.stringify(next));
+      return next;
+    })
+  }, [])
+
   const totalReviews = (businesses || []).reduce((a, b) => a + (Number(b?.review_count || b?.count || 0)), 0)
 
   return (
     <StoreCtx.Provider value={{ 
-      businesses, loading, addBusiness, addReview, 
+      businesses, loading, addBusiness, addReview, addReply,
       updateBusinessLocally, deleteBusinessLocally,
       totalReviews, reload: loadChainData 
     }}>
