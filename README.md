@@ -23,7 +23,7 @@ Welcome to the **Black Belt Graduation** of **StarChain**, a production-ready de
 *   **Demo Day Recording (Loom)**: [Watch Final Presentation](https://www.loom.com/share/3e6f163763b7476d814b6539ce52c251)
 *   **Onboarding Google Form**: [User Details & Feedback](https://docs.google.com/forms/d/e/1FAIpQLSe9ZonncPvng8-KcDP_nLv5fLXx5R3nTSFXG7F0wymJMpYyiA/viewform?usp=publish-editor)
 *   **User Feedback Excel Sheet**: [Exported Responses](https://docs.google.com/spreadsheets/d/1M7MpJttnzaU8tJJ5diGtT9nnqieeQzlkkgOKn_tpHxk/edit?usp=sharing)
-*   **Community Contribution (Twitter)**: `[LINK HERE - PASTE YOUR TWITTER POST LINK]`
+*   **Community Contribution (Twitter)**: `[https://x.com/Dbadhe23/status/2039367098586316892?s=20]`
 *   **Stellar Contract ID**: `CA43LPCXAPJQZYGKAKYKMIBL7WBOXWFY22ZCVTGTDRULIUHGHWXBXU6N`
 
 ---
