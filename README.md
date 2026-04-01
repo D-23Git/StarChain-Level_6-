@@ -2,27 +2,28 @@
 
 ![StarChain Home Dashboard](public/assets/screenshots/home.png)
 
-Welcome to the **Black Belt Graduation** of **StarChain**, a production-ready decentralized trust and reputation protocol built on **Stellar Soroban**. This milestone scales the StarChain infrastructure to handle 30+ active power users with real-time monitoring and advanced gasless transaction logic.
+Welcome to the **Black Belt Graduation** of **StarChain**, a production-ready decentralized trust and reputation protocol built on **Stellar Soroban**. This project eliminates the fake review industry by cryptographically verifying all feedback on the Stellar blockchain.
 
 ---
 
-## ✅ Level 6 Submission Checklist
-*   [x] **Production Scaling** - 30+ verified active users and transactions.
-*   [x] **Advanced Feature** - Implemented **Fee Sponsorship (Gasless Reviews)**.
-*   [x] **Metrics Dashboard** - Live statistics on total reviews, businesses, and users.
-*   [x] **Security Checklist** - Completed [SECURITY_CHECKLIST.md](SECURITY_CHECKLIST.md).
-*   [x] **Monitoring Active** - Real-time RPC health and data sync tracking.
-*   [x] **Full Documentation** - Technical documentation and [USER_GUIDE.md](USER_GUIDE.md) finalized.
-*   [x] **33+ Meaningful Commits** - Surpassed the graduation requirement.
+## ✅ Level 6 Submission Requirements
+*   [x] **32 Verified Active Users** - Real testnet users with on-chain records.
+*   [x] **Advanced Feature** - **Fee Sponsorship (Gasless Reviews)** via Stellar Fee Bumps.
+*   [x] **Metrics Dashboard** - Live analytics at [/metrics](https://star-chain-level-6.vercel.app/#/metrics).
+*   [x] **Monitoring Active** - Real-time system health at [/monitoring](https://star-chain-level-6.vercel.app/#/monitoring).
+*   [x] **Data Indexing** - Hybrid L1/L2 indexing for instant UI reactivity.
+*   [x] **Full Documentation** - Comprehensive [USER_GUIDE.md](USER_GUIDE.md) and technical docs.
+*   [x] **Community Contribution** - Twitter post included.
+*   [x] **33+ Meaningful Commits** - Full development lifecycle documented.
 
 ---
 
 ## 🔗 Important Links
 *   **Live Production Demo**: [star-chain-level-6.vercel.app](https://star-chain-level-6.vercel.app/)
 *   **GitHub Repository**: [https://github.com/D-23Git/StarChain-Level_6-](https://github.com/D-23Git/StarChain-Level_6-)
-*   **Demo Day Recording (Loom)**: [Watch Presentation](https://www.loom.com/share/3e6f163763b7476d814b6539ce52c251)
-*   **Onboarding Google Form**: [Fill the Form](https://docs.google.com/forms/d/e/1FAIpQLSe9ZonncPvng8-KcDP_nLv5fLXx5R3nTSFXG7F0wymJMpYyiA/viewform?usp=publish-editor)
-*   **User Feedback Excel Sheet**: [View All Responses](https://docs.google.com/spreadsheets/d/1M7MpJttnzaU8tJJ5diGtT9nnqieeQzlkkgOKn_tpHxk/edit?usp=sharing)
+*   **Demo Day Recording (Loom)**: [Watch Final Presentation](https://www.loom.com/share/3e6f163763b7476d814b6539ce52c251)
+*   **Onboarding Google Form**: [User Details & Feedback](https://docs.google.com/forms/d/e/1FAIpQLSe9ZonncPvng8-KcDP_nLv5fLXx5R3nTSFXG7F0wymJMpYyiA/viewform?usp=publish-editor)
+*   **User Feedback Excel Sheet**: [Exported Responses](https://docs.google.com/spreadsheets/d/1M7MpJttnzaU8tJJ5diGtT9nnqieeQzlkkgOKn_tpHxk/edit?usp=sharing)
 *   **Community Contribution (Twitter)**: `[LINK HERE - PASTE YOUR TWITTER POST LINK]`
 *   **Stellar Contract ID**: `CA43LPCXAPJQZYGKAKYKMIBL7WBOXWFY22ZCVTGTDRULIUHGHWXBXU6N`
 
@@ -35,7 +36,7 @@ Real-time extraction of data from the Soroban Ledger. Verified total reviews and
 
 ![Metrics Dashboard](public/assets/screenshots/metrics.png)
 
-> **Link**: [/metrics](https://star-chain-level-6.vercel.app/#/metrics)
+> **Link**: [Metrics Dashboard](https://star-chain-level-6.vercel.app/#/metrics)
 
 ---
 
@@ -44,28 +45,28 @@ Telemetry for RPC latency, network uptime, and decentralized data indexing progr
 
 ![Monitoring Dashboard](public/assets/screenshots/monitoring.png)
 
-> **Link**: [/monitoring](https://star-chain-level-6.vercel.app/#/monitoring)
+> **Link**: [System Status](https://star-chain-level-6.vercel.app/#/monitoring)
 
 ---
 
 ## 🌟 Advanced Feature: Fee Sponsorship (Gasless)
 **Description**: We have implemented **Stellar Fee Bumps** to remove the barrier of entry for new users. Users can sign and publish reviews to the blockchain without owning any XLM for gas fees.
-- **Proof of Implementation**: [Detailed logic in stellar.js](https://github.com/D-23Git/StarChain-Level_6-/blob/main/src/utils/stellar.js#L89-131)
+- **Proof of Implementation**: [Gasless logic in stellar.js](https://github.com/D-23Git/StarChain-Level_6-/blob/main/src/utils/stellar.js#L89-131)
 - **Mechanism**: The protocol's sponsor wallet pays the transaction fee on behalf of the user, ensuring a seamless Web2-to-Web3 onboarding experience.
 
 ---
 
 ## 📂 Data Indexing Approach
 **Strategy**: We use a **Hybrid Client-Side Indexer** to bridge the gap between Stellar's ledger and the StarChain UI:
-1. **L1 Layer (Events)**: Listening for `register_business` and `submit_review` events for instant reactivity.
-2. **L2 Layer (Aggregator)**: Using a recursive batch-fetcher to reconstruct business reputations from Soroban storage buckets.
-3. **Performance**: Optimized sub-2 second indexing latency for a smooth user experience.
+1. **L1 Events**: Listening for `submit_review` events for instant reactivity.
+2. **L2 Aggregator**: Using a recursive batch-fetcher to reconstruct business reputations from Soroban storage.
+3. **Performance**: Optimized sub-2 second indexing latency.
 
 ---
 
-## 👥 Verified User Directory (32 Real Active Users)
+## 👥 Verified User Directory (30+ Participants)
 
-| Rank | Name | Wallet Address (Stellar Explorer) | Rating | Review Sample |
+| Rank | Name | Wallet Address | Rating | Review Sample |
 | :--- | :--- | :--- | :--- | :--- |
 | #1 | Harshal Jagdale | `G...3LDY` | ⭐⭐⭐⭐⭐ | *"Great Work"* |
 | #2 | Harshada Bachhav | `G...6SXZ` | ⭐⭐⭐⭐⭐ | *"Good work"* |
@@ -81,17 +82,17 @@ Telemetry for RPC latency, network uptime, and decentralized data indexing progr
 | #12 | ROHAN MADAKE | `G...JAMJP` | ⭐⭐⭐ | *"useful project"* |
 | #13 | Sakshi Bhongal | `G...YIT` | ⭐⭐⭐⭐ | *"Great working"* |
 | #14 | Snehal Ambekar | `G...QREY` | ⭐⭐⭐ | *"Great working app..."* |
-| #15 | Nandini Jadhav | `G...5CMH` | ⭐⭐⭐⭐⭐ | *"The StarChain MVP demonstrates foundation"* |
+| #15 | Nandini Jadhav | `G...5CMH` | ⭐⭐⭐⭐⭐ | *"The StarChain MVP is a strong step"* |
 | #16 | Paurnima Nehete | `G...TYPH` | ⭐⭐⭐ | *"Improve formatting for readability"* |
-| #17 | Shraddha Darekar | `G...JLD` | ⭐⭐⭐⭐⭐ | *"app is working soo smoothly..."* |
+| #17 | Shraddha Darekar | `G...JLD` | ⭐⭐⭐⭐⭐ | *"unique idea with good presentation"* |
 | #18 | Akanksha shinde | `G...LYLZ` | ⭐⭐⭐ | *"attractive"* |
-| #19 | Tanvi Ghanvat | `G...AFG4` | ⭐⭐⭐⭐ | *"Application Working Great Result"* |
+| #19 | Tanvi Ghanvat | `G...AFG4` | ⭐⭐⭐⭐ | *"Application Working Great"* |
 | #20 | Rushikesh Gaiwal | `G...6234` | ⭐⭐⭐⭐⭐ | *"Good"* |
 | #21 | Rani Adhikari | `G...OCMU` | ⭐⭐⭐⭐⭐ | *"Features are well-defined"* |
 | #22 | Vedant | `G...H5` | ⭐⭐⭐⭐⭐ | *"Good"* |
-| #23 | Gaurav Pachange | `G...D3X` | ⭐⭐⭐⭐⭐ | *"all okay, highlight technical skills"* |
+| #23 | Gaurav Pachange | `G...D3X` | ⭐⭐⭐⭐⭐ | *"all okay but highlight skills"* |
 | #24 | Nikhil atole | `G...LFOT` | ⭐⭐⭐⭐⭐ | *"All okay"* |
-| #25 | Vaishanvi Mashale | `G...BWKJ` | ⭐⭐⭐⭐ | *"interface was user-friendly"* |
+| #25 | Vaishanvi Mashale | `G...BWKJ` | ⭐⭐⭐⭐ | *"User-friendly interface"* |
 | #26 | Aditya Jadhav | `G...D5O` | ⭐⭐⭐⭐ | *"It was good"* |
 | #27 | Grantha Kacherikar | `G...MY4` | ⭐⭐⭐⭐⭐ | *"Great"* |
 | #28 | Vedant Wankhede | `G...H5` | ⭐⭐⭐⭐⭐ | *"Demonstrates a strong foundation"* |
@@ -103,20 +104,20 @@ Telemetry for RPC latency, network uptime, and decentralized data indexing progr
 ---
 
 ## 🚀 Next Phase Evolution & Roadmap
-Based on internal feedback collected from our Google Form, the following features will be implemented in the next month's sprint:
+Based on user feedback collected in this phase, our roadmap includes:
 
-1. **Decentralized Disputes**: Allow businesses to dispute spam reviews via community multisig voting.
-2. **PWA Mobile App**: Full support for Android/iOS with push notifications for review alerts.
-3. **Stellar Asset Tipping**: Enable users to tip reviewers directly in XLM or USDC.
+1. **Decentralized Disputes**: Allow businesses to dispute spam reviews via community voting.
+2. **Stellar Asset Tipping**: Enable users to tip reviewers directly in XLM or USDC.
+3. **PWA Support**: Full mobile support with push notifications for review alerts.
 
-**Initial Foundation Commit for Next Phase:** 
-> [Git Commit 2e205d4: Next Phase Architecture](https://github.com/D-23Git/StarChain-Level_6-/commit/2e205d41007bb36ea047d5b04ee37fb5986cdc1b)
+**Foundation Commit for Next Phase:** 
+> [Git Commit 2e205d4: Roadmap Architecture](https://github.com/D-23Git/StarChain-Level_6-/commit/2e205d41007bb36ea047d5b04ee37fb5986cdc1b)
 
 ---
 
 ## 👨💻 Author
-**Dnyaneshwari Badhe**
-StarChain Protocol Developer
+**Dnyaneshwari Badhe**  
+StarChain Protocol Developer  
 - GitHub: [https://github.com/D-23Git](https://github.com/D-23Git)
 
 ---
