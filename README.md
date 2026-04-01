@@ -20,7 +20,7 @@ Welcome to the **Black Belt Graduation** of **StarChain**, a production-ready de
 ## 🔗 Important Links
 *   **Live Production Demo**: [star-chain-level-6.vercel.app](https://star-chain-level-6.vercel.app/)
 *   **GitHub Repository**: [https://github.com/D-23Git/StarChain-Level_6-](https://github.com/D-23Git/StarChain-Level_6-)
-*   **Demo Day Recording (Loom)**: [Watch Presentation](https://www.loom.com/share/763e1cc37e094c9a946b32d457882781)
+*   **Demo Day Recording (Loom)**: [Watch Presentation](https://www.loom.com/share/3e6f163763b7476d814b6539ce52c251)
 *   **Onboarding Google Form**: [Fill the Form](https://docs.google.com/forms/d/e/1FAIpQLSe9ZonncPvng8-KcDP_nLv5fLXx5R3nTSFXG7F0wymJMpYyiA/viewform?usp=publish-editor)
 *   **User Feedback Excel Sheet**: [View All Responses](https://docs.google.com/spreadsheets/d/1M7MpJttnzaU8tJJ5diGtT9nnqieeQzlkkgOKn_tpHxk/edit?usp=sharing)
 *   **Community Contribution (Twitter)**: `[LINK HERE - PASTE YOUR TWITTER POST LINK]`
@@ -63,40 +63,42 @@ Telemetry for RPC latency, network uptime, and decentralized data indexing progr
 
 ---
 
-## 👥 Verified User Directory (30+ Participants)
+## 👥 Verified User Directory (32 Real Active Users)
 
 | Rank | Name | Wallet Address (Stellar Explorer) | Rating | Review Sample |
-| :--- | : :--- | :--- | :--- | :--- |
-| #1 | Harshal Jagdale | `GCATAAS...3LDY` | ⭐⭐⭐⭐⭐ | *"Great Work"* |
-| #2 | Harshada Vikas Bachhav | `GATCVV5...6SXZ` | ⭐⭐⭐⭐⭐ | *"Good work"* |
-| #3 | Mansi Baban Sandbhor | `GDLLRKG...5LKV` | ⭐⭐⭐⭐⭐ | *"The functionality works smoothly..."* |
-| #4 | Pratidnya Agalave | `GCPHAHV...3JWYP` | ⭐⭐⭐⭐⭐ | *"The project can be improved..."* |
-| #5 | Pratiksha Kalbhor | `GDFNCO4...46PN2` | ⭐⭐⭐⭐ | *"good working app"* |
-| #6 | Yogesh Zol | `GBIXQLF...V4Y` | ⭐⭐⭐⭐⭐ | *"good working app"* |
-| #7 | Swaraj Dhumal | `GANBGUR...ILZ` | ⭐⭐⭐⭐⭐ | *"It was best"* |
-| #8 | Sagar wadekar | `GAIPODL...ACT2O` | ⭐⭐⭐⭐⭐ | *"Excellent"* |
-| #9 | Vaibhavi Jadhav | `GDLDLIW...XLQD` | ⭐⭐⭐ | *"Nice experience!!!"* |
-| #10 | Gayatri Thombare | `GDDO3MA...CTAZ` | ⭐⭐⭐⭐⭐ | *"Best features"* |
-| #11 | Pratibha | `GAR52QX...VNRKP` | ⭐⭐⭐⭐⭐ | *"I appreciate the effort..."* |
-| #12 | ROHAN MADAKE | `GD5CPYM...KJU` | ⭐⭐⭐ | *"useful project"* |
-| #13 | Sakshi Bhongal | `GBDJANB...VMYK` | ⭐⭐⭐⭐ | *"Great working"* |
-| #14 | Snehal P Ambekar | `GCLINJP...X4EU` | ⭐⭐⭐ | *"Great working app..."* |
-| #15 | Nandini Jadhav | `GCT3E7H...ZFZC` | ⭐⭐⭐⭐⭐ | *"The StarChain MVP..."* |
-| #16 | Paurnima Nehete | `GAF4SUB...3UXOR` | ⭐⭐⭐ | *"Improve formatting..."* |
-| #17 | Shraddha Darekar | `GBZNCOC...XJX` | ⭐⭐⭐⭐⭐ | *"app is working smoothly"* |
-| #18 | Akanksha shinde | `GCPQV7J...XVJNS` | ⭐⭐⭐ | *"attractive"* |
-| #19 | Tanvi Ghanvat | `GBFXORY...AJZL` | ⭐⭐⭐⭐ | *"Application Working Great"* |
-| #20 | Rushikesh Gaiwal | `GDWKI7Z...4E2C` | ⭐⭐⭐⭐⭐ | *"Good"* |
-| #21 | Rani Adhikari | `GBHU4BB...PZJ` | ⭐⭐⭐⭐⭐ | *"Features are well-defined"* |
-| #22 | Vedant | `GCLNUBY...FNXQYW` | ⭐⭐⭐⭐⭐ | *"Good"* |
-| #23 | Gaurav Pachange | `GCZICBA...3V4JD6` | ⭐⭐⭐⭐⭐ | *"all okay, highlight skills"* |
-| #24 | Nikhil atole | `GBA5GGF...XIC` | ⭐⭐⭐⭐⭐ | *"All okay"* |
-| #25 | Vaishanvi Mashale | `GDQRBTS...FPLU` | ⭐⭐⭐⭐ | *"User-friendly interface"* |
-| #26 | Aditya Jadhav | `GCJYLVH...6ZI` | ⭐⭐⭐⭐ | *"It was good"* |
-| #27 | Grantha Kacherikar | `GBC4D46...74L` | ⭐⭐⭐⭐⭐ | *"Great"* |
-| #28 | Vedant Wankhede | `GCLNUBY...FNXQYW` | ⭐⭐⭐⭐⭐ | *"Demonstrates quality"* |
-| #29 | Abhijit Aadchine | `GBR7UUT...5QI` | ⭐⭐⭐⭐⭐ | *"Best!"* |
-| #30 | Sahil Potale | `GA22HDH...KFX3` | ⭐⭐⭐⭐ | *"User friendly and easy to use"* |
+| :--- | :--- | :--- | :--- | :--- |
+| #1 | Harshal Jagdale | `G...3LDY` | ⭐⭐⭐⭐⭐ | *"Great Work"* |
+| #2 | Harshada Bachhav | `G...6SXZ` | ⭐⭐⭐⭐⭐ | *"Good work"* |
+| #3 | Mansi Sandbhor | `G...5LKV` | ⭐⭐⭐⭐⭐ | *"The functionality works smoothly..."* |
+| #4 | Pratidnya Agalave | `G...3JWYP` | ⭐⭐⭐⭐⭐ | *"The project can be improved..."* |
+| #5 | Pratiksha Kalbhor | `G...JQE` | ⭐⭐⭐⭐ | *"good working app"* |
+| #6 | Yogesh Zol | `G...E2P` | ⭐⭐⭐⭐⭐ | *"good working app"* |
+| #7 | Swaraj Dhumal | `G...HBS` | ⭐⭐⭐⭐⭐ | *"It was best"* |
+| #8 | Sagar wadekar | `G...2U5` | ⭐⭐⭐⭐⭐ | *"Excellent"* |
+| #9 | Vaibhavi Jadhav | `G...Z56` | ⭐⭐⭐ | *"Nice experience!!!"* |
+| #10 | Gayatri Thombare | `G...A6N` | ⭐⭐⭐⭐⭐ | *"Best features"* |
+| #11 | Pratibha | `G...FT4L` | ⭐⭐⭐⭐⭐ | *"I appreciate the effort..."* |
+| #12 | ROHAN MADAKE | `G...JAMJP` | ⭐⭐⭐ | *"useful project"* |
+| #13 | Sakshi Bhongal | `G...YIT` | ⭐⭐⭐⭐ | *"Great working"* |
+| #14 | Snehal Ambekar | `G...QREY` | ⭐⭐⭐ | *"Great working app..."* |
+| #15 | Nandini Jadhav | `G...5CMH` | ⭐⭐⭐⭐⭐ | *"The StarChain MVP demonstrates foundation"* |
+| #16 | Paurnima Nehete | `G...TYPH` | ⭐⭐⭐ | *"Improve formatting for readability"* |
+| #17 | Shraddha Darekar | `G...JLD` | ⭐⭐⭐⭐⭐ | *"app is working soo smoothly..."* |
+| #18 | Akanksha shinde | `G...LYLZ` | ⭐⭐⭐ | *"attractive"* |
+| #19 | Tanvi Ghanvat | `G...AFG4` | ⭐⭐⭐⭐ | *"Application Working Great Result"* |
+| #20 | Rushikesh Gaiwal | `G...6234` | ⭐⭐⭐⭐⭐ | *"Good"* |
+| #21 | Rani Adhikari | `G...OCMU` | ⭐⭐⭐⭐⭐ | *"Features are well-defined"* |
+| #22 | Vedant | `G...H5` | ⭐⭐⭐⭐⭐ | *"Good"* |
+| #23 | Gaurav Pachange | `G...D3X` | ⭐⭐⭐⭐⭐ | *"all okay, highlight technical skills"* |
+| #24 | Nikhil atole | `G...LFOT` | ⭐⭐⭐⭐⭐ | *"All okay"* |
+| #25 | Vaishanvi Mashale | `G...BWKJ` | ⭐⭐⭐⭐ | *"interface was user-friendly"* |
+| #26 | Aditya Jadhav | `G...D5O` | ⭐⭐⭐⭐ | *"It was good"* |
+| #27 | Grantha Kacherikar | `G...MY4` | ⭐⭐⭐⭐⭐ | *"Great"* |
+| #28 | Vedant Wankhede | `G...H5` | ⭐⭐⭐⭐⭐ | *"Demonstrates a strong foundation"* |
+| #29 | Abhijit Aadchine | `G...RIV7` | ⭐⭐⭐⭐⭐ | *"Best!"* |
+| #30 | Sahil Potale | `G...HIPD` | ⭐⭐⭐⭐ | *"User friendly and easy to use"* |
+| #31 | Sarthak Palande | `G...JUM7` | ⭐⭐⭐⭐⭐ | *"Best!"* |
+| #32 | Atharva | `G...KZUA` | ⭐⭐⭐⭐⭐ | *"Good working and integration"* |
 
 ---
 
@@ -113,8 +115,8 @@ Based on internal feedback collected from our Google Form, the following feature
 ---
 
 ## 👨💻 Author
-**Dnyaneshwari Badhe** & Team
-StarChain Protocol Developers
+**Dnyaneshwari Badhe**
+StarChain Protocol Developer
 - GitHub: [https://github.com/D-23Git](https://github.com/D-23Git)
 
 ---
