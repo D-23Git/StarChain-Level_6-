@@ -1,6 +1,6 @@
 # 🏆 StarChain Reviews — Level 6 Black Belt Graduation
 
-![StarChain Home Dashboard](./public/assets/screenshots/home.png)
+![StarChain Home Dashboard](public/assets/screenshots/home.png)
 
 Welcome to the **Black Belt Graduation** of **StarChain**, a production-ready decentralized trust and reputation protocol built on **Stellar Soroban**. This milestone scales the StarChain infrastructure to handle 30+ active power users with real-time monitoring and advanced gasless transaction logic.
 
@@ -10,9 +10,9 @@ Welcome to the **Black Belt Graduation** of **StarChain**, a production-ready de
 *   [x] **Production Scaling** - 30+ verified active users and transactions.
 *   [x] **Advanced Feature** - Implemented **Fee Sponsorship (Gasless Reviews)**.
 *   [x] **Metrics Dashboard** - Live statistics on total reviews, businesses, and users.
-*   [x] **Security Checklist** - Completed [SECURITY_CHECKLIST.md](./SECURITY_CHECKLIST.md).
+*   [x] **Security Checklist** - Completed [SECURITY_CHECKLIST.md](SECURITY_CHECKLIST.md).
 *   [x] **Monitoring Active** - Real-time RPC health and data sync tracking.
-*   [x] **Full Documentation** - Technical documentation and [USER_GUIDE.md](./USER_GUIDE.md) finalized.
+*   [x] **Full Documentation** - Technical documentation and [USER_GUIDE.md](USER_GUIDE.md) finalized.
 *   [x] **33+ Meaningful Commits** - Surpassed the graduation requirement.
 
 ---
@@ -33,7 +33,7 @@ Welcome to the **Black Belt Graduation** of **StarChain**, a production-ready de
 ### 📈 Protocol Health Metrics
 Real-time extraction of data from the Soroban Ledger. Verified total reviews and unique wallet participation.
 
-![Metrics Dashboard](./public/assets/screenshots/metrics.png)
+![Metrics Dashboard](public/assets/screenshots/metrics.png)
 
 > **Link**: [/metrics](https://star-chain-level-6.vercel.app/#/metrics)
 
@@ -42,7 +42,7 @@ Real-time extraction of data from the Soroban Ledger. Verified total reviews and
 ### 📡 Real-Time System Monitoring
 Telemetry for RPC latency, network uptime, and decentralized data indexing progress.
 
-![Monitoring Dashboard](./public/assets/screenshots/monitoring.png)
+![Monitoring Dashboard](public/assets/screenshots/monitoring.png)
 
 > **Link**: [/monitoring](https://star-chain-level-6.vercel.app/#/monitoring)
 
@@ -66,7 +66,7 @@ Telemetry for RPC latency, network uptime, and decentralized data indexing progr
 ## 👥 Verified User Directory (30+ Participants)
 
 | Rank | Name | Wallet Address (Stellar Explorer) | Rating | Review Sample |
-| :--- | :--- | :--- | :--- | :--- |
+| :--- | : :--- | :--- | :--- | :--- |
 | #1 | Harshal Jagdale | `GCATAAS...3LDY` | ⭐⭐⭐⭐⭐ | *"Great Work"* |
 | #2 | Harshada Vikas Bachhav | `GATCVV5...6SXZ` | ⭐⭐⭐⭐⭐ | *"Good work"* |
 | #3 | Mansi Baban Sandbhor | `GDLLRKG...5LKV` | ⭐⭐⭐⭐⭐ | *"The functionality works smoothly..."* |
