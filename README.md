@@ -55,10 +55,36 @@ We have successfully onboarded **30+ verified users** who have interacted with t
 ## 📊 Verified User Directory (30+ Participants)
 | Rank | Name | Wallet Address (Stellar Explorer) | Rating | Review Sample |
 | :--- | :--- | :--- | :--- | :--- |
-| 01 | Dinesh Badhe | `GCPHAHVI7F4BOL6H6UIC3PBBESUN3PE7D3QVJLAMFLJBJDJMMX23JWYP` | ⭐⭐⭐⭐⭐ | *"Verified Level 6 Graduation Milestone"* |
-| 02 | Rashmi Gupta | `GA5W4R3E21Q0P9O8N7M6L5K4J3I2H1G0F9E8D7C6B5A49876543210...` | ⭐⭐⭐⭐⭐ | *"Gasless feature works perfect"* |
-| 03 | Amit Shinde | `GB Sharma (Demo Account)` | ⭐⭐⭐⭐⭐ | *"Excellent decentralized discovery"* |
-| ... | *(See full 30+ list in the Excel sheet linked above)* | | | |
+| 01 | Harshal Jagdale | `GCATAASNFHODIKA4VTIEZHONZB3BGZJL42FXI` | ⭐⭐⭐⭐⭐ | *"Great Work"* |
+| 02 | Harshada Vikas Bachhav | `GATCVV5LUG2YM6Y7YMN3LHZWRVV3MT34WB` | ⭐⭐⭐⭐⭐ | *"Good work"* |
+| 03 | Mansi Baban Sandbhor | `GDLLRKGB CPUYRJE3HFYUNI46PQQNA5HPP6QF` | ⭐⭐⭐⭐⭐ | *"The functionality works smoothly without issues"* |
+| 04 | Pratidnya Agalave | `GCPHAHVI7F4BOL6H6UIC3PBBESUN3PE7D3QVJLAMFLJBJDJMMX23JWYP` | ⭐⭐⭐⭐⭐ | *"The project can be improved by adding more features"* |
+| 05 | Pratiksha Kalbhor | `GDFNCO4KZN7VZJTCYWPJYQN2WJGKJY46PN2` | ⭐⭐⭐⭐ | *"good working app"* |
+| 06 | Yogesh Zol | `GBIXQLFE540K32JKGLK3MLEAJ35IIX6RVHJV4Y` | ⭐⭐⭐⭐⭐ | *"good working app"* |
+| 07 | Swaraj Dhumal | `GANBGUREB5ZAY26ZIAB6VHVQ7CG4KNQMEILZ` | ⭐⭐⭐⭐⭐ | *"It was best"* |
+| 08 | Sagar wadekar | `GAIPODL5BOL37FDAZNDW5IJDAQLAPOACT2O` | ⭐⭐⭐⭐⭐ | *"Excellent"* |
+| 09 | Vaibhavi Jadhav | `GDLDLIWDEER6YNOFEWVBY3OHSGIGDRDXLQD` | ⭐⭐⭐ | *"Nice experience!!!"* |
+| 10 | Gayatri Vinod Thombare | `GDDO3MAH6MTP2XCDAF3P5QUYFUIZD43CTAZ` | ⭐⭐⭐⭐⭐ | *"Best features"* |
+| 11 | Pratibha | `GAR52QXZW7BQLPOQZQRDAKIHQOLMI3VRNKP` | ⭐⭐⭐⭐⭐ | *"I appreciate the effort you've put into this"* |
+| 12 | ROHAN MADAKE | `GD5CPYM7ZFB TWFD5WHAIMMHSF5TRFOXKJU` | ⭐⭐⭐ | *"useful project"* |
+| 13 | Sakshi Babasaheb Bhongal | `GBDJANBFQLKOBBZJP2J7FSGR7ZDOTDHVMYK` | ⭐⭐⭐⭐ | *"Great working"* |
+| 14 | Snehal P Ambekar | `GCLINJPXUXC5QYY47CPZZUAHKAXSFKKI2X4EU` | ⭐⭐⭐ | *"Great working app, can improve features"* |
+| 15 | Nandini Anurath Jadhav | `GCT3E7HUMKYVC2MXFURGRQJF5PMS4V6ZFZC` | ⭐⭐⭐⭐⭐ | *"The StarChain Reviews MVP demonstrates potential"* |
+| 16 | Paurnima Rajesh Nehete | `GAF4SUBPSJL6QATQILXS6JK7X4A6J6FA3UXOR` | ⭐⭐⭐ | *"Improve formatting for readability"* |
+| 17 | Shraddha Darekar | `GBZNCOCUQGMV5EVU4SNZ2WRVH6UJ6INYXJX` | ⭐⭐⭐⭐⭐ | *"app is working soo smoothly and idea is great"* |
+| 18 | Akanksha shinde | `GCPQV7JCPIEQNXYRY54BCT3M7L24EM5XVJNS` | ⭐⭐⭐ | *"attractive"* |
+| 19 | Tanvi Ghanvat | `GBFXORYKWEFNZLV7AT7ZVGWHNALGI27AJZL` | ⭐⭐⭐⭐ | *"Application Working Great And It is useful"* |
+| 20 | Rushikesh Ram Gaiwal | `GDWKI7ZGILRPYAN6LLKY3W6HHIWMFA5I54E2C` | ⭐⭐⭐⭐⭐ | *"Good"* |
+| 21 | Rani Adhikari | `GBHU4BB4TIEWUTWMT46EFGEFJAQ7WPNPEZJ` | ⭐⭐⭐⭐⭐ | *"Features are well-defined"* |
+| 22 | Vedant | `GCLNUBYQRGLPFCHIJCN5T6SIA05Z2B FNXQYW` | ⭐⭐⭐⭐⭐ | *"Good"* |
+| 23 | Gaurav Pachange | `GCZICBA5IXOT2UVLFT4ZXWGSME275Q3V4JD6` | ⭐⭐⭐⭐⭐ | *"all okay but highlight technical skills"* |
+| 24 | Nikhil atole | `GBA5GGFLBML3KBU4HB5IFOX3JNAJ373PB7XIC` | ⭐⭐⭐⭐⭐ | *"All okay"* |
+| 25 | Vaishanvi Mashale | `GDQRBTSNVRWZVSEKNPOS2IEUTRMPLK2FPLU` | ⭐⭐⭐⭐ | *"The interface was user-friendly and efficient"* |
+| 26 | Aditya Jadhav | `GCJYLVHUCMZ4BELO5NWRJ4FXLXPJAOZCX6ZI` | ⭐⭐⭐⭐ | *"It was good"* |
+| 27 | Grantha Kacherikar | `GBC4D467BVLXKW7R3ZZVTUGJBWKHR25S74L` | ⭐⭐⭐⭐⭐ | *"Great"* |
+| 28 | Vedant Wankhede | `GCLNUBYQRGLPFCHIJCN5T6SIA05Z2B FNXQYW` | ⭐⭐⭐⭐⭐ | *"The StarChain Reviews MVP demonstrate quality"* |
+| 29 | Abhijit Aadchine | `GBR7UUTWPQWOHQ2MQIAZAYX2JJVW4RF65QI` | ⭐⭐⭐⭐⭐ | *"Best!"* |
+| 30 | Sahil Potale | `GA22HDH77P7CXT2MKTHAS6OXXYQPC56KFX3` | ⭐⭐⭐⭐ | *"User friendly and easy to use"* |
 
 ---
 
